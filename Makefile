@@ -39,5 +39,8 @@ test: hidden ## run pytest with coverage
 run: ## run `poetry run timhughes-pypi-testing`
 	poetry run timhughes-pypi-testing
 
+bumpversion: ## bumpversion
+	poetry run bump2version --tag --current-version $(git describe --tags --abbrev=0) --tag-name '{new_version}' patch
+
 build: install lint test ## run `poetry build` to build source distribution and wheel
 	poetry build
