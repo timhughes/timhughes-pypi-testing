@@ -32,6 +32,7 @@ pylint = "^2.6.0"
 vulture = "^2.3"
 jedi-language-server = "^0.22.0"
 isort= "^5.0.8"
+bump2version = "^1.0.1"
 
 [build-system]
 requires = ["poetry_core>=1.0.0"]
