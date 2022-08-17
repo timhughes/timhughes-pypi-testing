@@ -23,5 +23,5 @@ jobs:
       run: |
         poetry version $(git describe --tags --abbrev=0)
         poetry build
-        poetry config repositories.testpypi https://test.pypi.org/legacy
+        poetry config repositories.testpypi https://test.pypi.org/legacy/
         poetry publish --repository testpypi --username __token__ --password ${{ secrets.PYPI_API_TOKEN }}
