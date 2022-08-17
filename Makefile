@@ -36,7 +36,8 @@ format: ## Formats you code with Black
 test: hidden ## run pytest with coverage
 	poetry run pytest -v --cov timhughes_pypi_testing
 
-build: install lint test ## run `poetry build` to build source distribution and wheel
-	poetry build
 run: ## run `poetry run timhughes-pypi-testing`
 	poetry run timhughes-pypi-testing
+
+build: install lint test ## run `poetry build` to build source distribution and wheel
+	poetry build
