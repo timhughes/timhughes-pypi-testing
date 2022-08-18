@@ -44,4 +44,5 @@ build: install lint test ## run `poetry build` to build source distribution and 
 
 bumpversion: test build ## bumpversion
 	poetry run bump2version --tag --current-version $$(git describe --tags --abbrev=0) --tag-name '{new_version}' patch
+	git push
 	git push --tags 
