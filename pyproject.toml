@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "timhughes-pypi-testing"
-version = "0"  # Version is controlled by git tags at release time. Leave this at '0'
+version = "0.0.0+local"  # Version is controlled by git tags at release time. Leave this at '0'
 description = "A simple application"
 authors = ["Tim Hughes <thughes@thegoldfish.org>"]
 # Use identifier from https://spdx.org/licenses/
